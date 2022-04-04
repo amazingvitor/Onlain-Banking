@@ -9,8 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack(spacing: 0) {
+            MainView()
+            HStack {
+                Image(systemName: "house")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(Color.CustomOrange)
+                Image(systemName: "chart.line.uptrend.xyaxis")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20, alignment: .center)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(Color.white)
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20, alignment: .center)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(Color.white)
+                Image(systemName: "person")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20, alignment: .center)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(Color.white)
+            }
             .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.CustomBlue)
+        }
     }
 }
 
